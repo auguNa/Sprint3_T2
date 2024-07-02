@@ -9,9 +9,7 @@ public class BankAccount implements PaymentMethod {
 
     @Override
     public void pay(PaymentCallback callback) {
-        // Simulate payment processing
         System.out.println("Processing bank account payment with account number: " + accountNumber);
-        // Notify the callback
         callback.onPaymentSuccess("Bank Account payment successful.");
     }
 }

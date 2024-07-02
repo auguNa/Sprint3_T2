@@ -9,9 +9,8 @@ public class CreditCard implements PaymentMethod {
 
     @Override
     public void pay(PaymentCallback callback) {
-        // Simulate payment processing
+
         System.out.println("Processing credit card payment with card number: " + cardNumber);
-        // Notify the callback
         callback.onPaymentSuccess("Credit Card payment successful.");
     }
 }

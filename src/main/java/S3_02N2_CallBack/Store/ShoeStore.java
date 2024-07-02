@@ -12,11 +12,13 @@ public class ShoeStore implements PaymentCallback {
     }
     @Override
     public void onPaymentSuccess(String message) {
+        System.out.println("Payment succeeded: " + message);
 
     }
 
     @Override
     public void onPaymentFailure(String error) {
+        System.out.println("Payment failed: " + error);
 
     }
 }
